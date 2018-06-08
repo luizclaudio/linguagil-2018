@@ -137,17 +137,19 @@ https://codehandbook.org/pymongo-tutorial-crud-operation-mongodb/)
         - Subnets: Selecionar todas
     - Criar Task Definition
         - Task Definition Name: la2018
-        - Container name: express-app
-        - Image: YOUR_DOCKER_HUB_USER/express-app
+        - Container name: la2018
+        - Image: YOUR_DOCKER_HUB_USER/linguagil-2018
         - Memory Limits: Soft limit - 300
         - Port mappings: host port - 80, container port - 3000, protocol - tcp
+        - **Setar variáveis de ambiente.**
     - Criar Service
-        - Task Definition: express-app
-        - Cluster: express-app
-        - Service name: express-app
+        - Task Definition: la2018
+        - Cluster: la2018
+        - Service name: la2018
         - Number of tasks: 1
         - Minimum healthy percent: 0
         - Maximum percent: 200
-    - Observar a tab Events
-    - Procurar a tab ECS Instances no Cluster
-    - Conferir as configurações do Security Group
+    - Observar a tab Events.
+    - Procurar a tab *ECS Instances* no Cluster.
+    - **Conferir as configurações do Security Group.**
+    - **Ver o caminho para a VM onde está o container.**
