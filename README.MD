@@ -2,7 +2,7 @@
 
 Os programas, arquivos de configuração e orientações contidos neste repositório têm o objetivo de permitir testar de forma simples como executar uma aplicação Web [Python 3](https://www.python.org/), tanto localmente quanto na Nuvem. Neste segundo caso, executar em plataformas como serviço, em provedores de máquinas virtuais e em provedores de infraestrutura para containers Docker.
 
-A aplicação-exemplo, utilizada em todos os casos, implementa uma API REST de poucos endpoints que pode salvar e recuperar dados em um banco de dados MongoDB, também hospedado na Nuvem. São usadas as bibliotecas (libs) Python [Flask](http://flask.pocoo.org/), [PyMongo](https://api.mongodb.com/python/current/) e [Gunicorn](http://gunicorn.org/) e o utilitário [Pipenv](https://github.com/pypa/pipenv). Para outros exmplos, use estas referências:
+A aplicação-exemplo, utilizada em todos os casos, se baseia sempre que possível nos princípios da metodologia "[The Twelve-Factor App](https://12factor.net/)". A aplicação implementa uma API REST que pode salvar e recuperar dados em um banco de dados MongoDB, também hospedado na Nuvem. São usadas as bibliotecas (libs) Python [Flask](http://flask.pocoo.org/), [PyMongo](https://api.mongodb.com/python/current/) e [Gunicorn](http://gunicorn.org/) e o utilitário [Pipenv](https://github.com/pypa/pipenv). As referências a seguir dão mais detalhes sobre esses recursos:
 
 - [Flask by Example (Real Python)](https://realpython.com/flask-by-example-part-1-project-setup/)
 
@@ -12,7 +12,7 @@ https://codehandbook.org/pymongo-tutorial-crud-operation-mongodb/)
 - [Pipenv & Virtual Environments (The Hitchhiker's Guide to Python)](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 
 
-**IMPORTANTE**: Como as versões dos softwares e dos sites mudam, as orientações dadas aqui poderão não se aplicar mais, depois de um tempo.
+**IMPORTANTE**: Como as versões dos softwares e dos sites dos provedores mudam, as orientações dadas aqui poderão não se aplicar mais, depois de um tempo.
 
 1. **Baixando e configurando o conteúdo deste repositório**
     - ```git clone git@github.com:luizclaudio/linguagil-2018.git```
@@ -26,7 +26,7 @@ https://codehandbook.org/pymongo-tutorial-crud-operation-mongodb/)
 
     - ```pipenv run gunicorn -b 0.0.0.0:8000 application:app```
 
-    - Seguem exemplos usando os utilitários [HTTPie](https://httpie.org/) e [Curl](https://curl.haxx.se/)
+    - **A seguir, são mostrados exemplos usando os utilitários [HTTPie](https://httpie.org/) e [Curl](https://curl.haxx.se/)**
 
         **Listar todos os documentos**
 
