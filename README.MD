@@ -16,6 +16,7 @@ https://codehandbook.org/pymongo-tutorial-crud-operation-mongodb/)
 
 1. **Baixando e configurando o conteúdo deste repositório**
     - ```git clone https://github.com/luizclaudio/linguagil-2018.git```
+    - ```cd linguagil-2018```
     - Trocar o valor da variável *"COLECAO"* no arquivo *".env"* para um nome de sua escolha.
     - Verificar se o utilitário *"pipenv"* está instalado: ```pipenv --version```
     - Instalar, se necessário o utilitário o *"pipenv"*: ```pip install pipenv```
