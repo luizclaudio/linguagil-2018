@@ -15,8 +15,7 @@ https://codehandbook.org/pymongo-tutorial-crud-operation-mongodb/)
 **IMPORTANTE**: Como as versões dos softwares e dos sites dos provedores mudam, as orientações dadas aqui poderão não se aplicar mais, depois de um tempo.
 
 1. **Baixando e configurando o conteúdo deste repositório**
-    - ```git clone git@github.com:luizclaudio/linguagil-2018.git```
-    - ```cd linguagil-2018```
+    - ```git clone https://github.com/luizclaudio/linguagil-2018.git```
     - Trocar o valor da variável *"COLECAO"* no arquivo *".env"* para um nome de sua escolha.
     - Verificar se o utilitário *"pipenv"* está instalado: ```pipenv --version```
     - Instalar, se necessário o utilitário o *"pipenv"*: ```pip install pipenv```
@@ -38,7 +37,7 @@ https://codehandbook.org/pymongo-tutorial-crud-operation-mongodb/)
 
         - ```http -v POST http://127.0.0.1:8000/api/documentos/ nome="Maria José" idade:=23 notificar:=false``` ; ou
 
-        - ```curl -v -H "Content-Type: application/json" -X POST -d' "nome":"Maria José", "idade":23, "notificar":false}'  http://127.0.0.1:8000/api/documentos/```
+        - ```curl -v -H "Content-Type: application/json" -X POST -d '{"nome":"Maria José", "idade":23, "notificar":false}'  http://127.0.0.1:8000/api/documentos/```
 
         **Recuperar um documento por id**
 
@@ -103,7 +102,7 @@ https://codehandbook.org/pymongo-tutorial-crud-operation-mongodb/)
     - ```sudo apt-get update```
     - ```sudo apt-get install python3-pip```
     - ```pip3 install pipenv```
-    - ```git clone git@github.com:luizclaudio/linguagil-2018.git```
+    - ```git clone https://github.com/luizclaudio/linguagil-2018.git```
     - ```cd linguagil-2018```
     - ```pipenv install```
     - ```pipenv run gunicorn -b 0.0.0.0:8000 application:app```
@@ -140,7 +139,7 @@ https://codehandbook.org/pymongo-tutorial-crud-operation-mongodb/)
         - Container name: la2018
         - Image: YOUR_DOCKER_HUB_USER/linguagil-2018
         - Memory Limits: Soft limit - 300
-        - Port mappings: host port - 80, container port - 3000, protocol - tcp
+        - Port mappings: host port - 80, container port - 8000, protocol - tcp
         - **Setar variáveis de ambiente.**
     - Criar Service
         - Task Definition: la2018
